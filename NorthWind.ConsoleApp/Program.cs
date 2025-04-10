@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using NorthWind.Entities.Interfaces;
+using NorthWind.ConsoleApp.Services;
+using NorthWind.Writers;
 
-namespace NorthWind.ConsoleApp
-{
-    internal class Program
-    {
-    }
-}
+IUserActionWriter writer = new DebugWriter();
+
+AppLogger logger = new AppLogger(writer);
+logger.WriteLog("Application started.");
+
+ProductService Service=new ProductService(writer);
+Service.Add("Demo", "Azucar refinada");
