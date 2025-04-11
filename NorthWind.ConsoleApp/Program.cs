@@ -2,8 +2,11 @@
 using NorthWind.Entities.Interfaces;
 using NorthWind.ConsoleApp.Services;
 using NorthWind.Writers;
+using Microsoft.Extensions.Hosting;
 
-IUserActionWriter writer = new DebugWriter();
+var Builder = Host
+
+IUserActionWriter writer = new FileWriter();
 
 AppLogger logger = new AppLogger(writer);
 logger.WriteLog("Application started.");
