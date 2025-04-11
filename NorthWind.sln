@@ -5,9 +5,13 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Entities", "NorthWind.Entities\NorthWind.Entities.csproj", "{4C0A484E-346E-4B71-A244-7093EE48F42B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.ConsoleApp", "NorthWind.ConsoleApp\NorthWind.ConsoleApp.csproj", "{48319416-5C38-471C-8C7F-D9254E9F9D22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.ConsoleApp", "NorthWind.ConsoleApp\NorthWind.ConsoleApp.csproj", "{48319416-5C38-471C-8C7F-D9254E9F9D22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Writers", "NorthWind.Writers\NorthWind.Writers.csproj", "{4456FFE6-DC0D-4F34-BC00-B0C7E78BD743}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWind.Writers", "NorthWind.Writers\NorthWind.Writers.csproj", "{4456FFE6-DC0D-4F34-BC00-B0C7E78BD743}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.loC", "NorthWind.loC\NorthWind.loC.csproj", "{ECC0ABEB-B065-47AB-BD0A-537F943D4654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWind.Core", "NorthWind.Core\NorthWind.Core.csproj", "{4CE09023-FA85-41D3-AFA2-803DE1B0919B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{4456FFE6-DC0D-4F34-BC00-B0C7E78BD743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4456FFE6-DC0D-4F34-BC00-B0C7E78BD743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4456FFE6-DC0D-4F34-BC00-B0C7E78BD743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC0ABEB-B065-47AB-BD0A-537F943D4654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC0ABEB-B065-47AB-BD0A-537F943D4654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC0ABEB-B065-47AB-BD0A-537F943D4654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC0ABEB-B065-47AB-BD0A-537F943D4654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE09023-FA85-41D3-AFA2-803DE1B0919B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE09023-FA85-41D3-AFA2-803DE1B0919B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE09023-FA85-41D3-AFA2-803DE1B0919B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE09023-FA85-41D3-AFA2-803DE1B0919B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

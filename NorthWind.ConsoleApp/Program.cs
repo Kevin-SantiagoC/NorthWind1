@@ -6,15 +6,13 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
 HostApplicationBuilder Builder = Host.CreateApplicationBuilder();
-Builder.Services.AddConsoleWriter();
-Builder.Services.AddDebugWriter();
-Builder.Services.AddFileWriter();
-Builder.Services.AddSingleton<AppLogger>();
-Builder.Services.AddSingleton<ProductService>();
+Builder.Services.AddNorthWindService();
+
+
 using IHost AppHost = Builder.Build();
 
-AppLogger logger = AppHost.Services.GetRequiredService<AppLogger>();
+IAppLogger logger = AppHost.Services.GetRequiredService<IAppLogger>();
 logger.WriteLog("Application started.");
 
-ProductService Service = AppHost.Services.GetRequiredService<ProductService>();
+IProductService Service = AppHost.Services.GetRequiredService<IProductService>();
 Service.Add("Demo", "Azucar refinada");

@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace NorthWind.ConsoleApp.Services
 {
-    internal class AppLogger(IEnumerable<IUserActionWriter> writer)
+    internal class ProductService(IUserActionWriter writer): IProductService
     {
-        public void WriteLog(string message)
+
+        public void Add(string user, string productName) 
         {
-            UserAction Log = new UserAction("System", message);
-            foreach(var Writer in writer) 
-            Writer.Write(Log);
+            UserAction Action = new UserAction(user, $"Created: {productName}");
+            writer.Write(Action);
         }
     }
 }

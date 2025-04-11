@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using NorthWind.ConsoleApp.Services;
 using NorthWind.Entities.Interfaces;
 using NorthWind.Writers;
 using System;
@@ -11,11 +12,11 @@ namespace Microsoft.Extensions.DependencyInjection;
 
 public static class DependencyContainer
 {
-    public static IServiceCollection AddNorthWindService
+    public static IServiceCollection AddService
         (this IServiceCollection services)
     {
-        services.AddDebugWriter();
-        services.AddService();
+        services.AddSingleton<IAppLogger, AppLogger>();
+        services.AddSingleton<IProductService, ProductService>();
         return services;
     }
 
